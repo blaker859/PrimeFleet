@@ -40,7 +40,7 @@ font-family: 'Rufina', serif;
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Rufina', sans-serif;
 	font-size:16px;
 	color:#818998;
     text-transform:initial;
@@ -50,7 +50,7 @@ body{
 }
 .social-media {
     position: relative; /* Or use absolute/fixed based on your needs */
-    z-index: 1000; /* High z-index value to ensure it comes to the front */
+    z-index: 50; /* High z-index value to ensure it comes to the front */
     text-align: center;
     margin: 0;
     padding-top: 100px;
@@ -65,6 +65,92 @@ body{
     width: 75px; /* Adjust the size as needed */
     height: auto;
   }
+/* From Uiverse.io by vinodjangid07 */ 
+.card {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 25px;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+    
+  }
+  
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: .3s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: .3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: .3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: .3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128C7E;
+    transition-duration: .3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: .3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  .header {
+    font-family: 'Rufina', serif;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.highlight {
+    color: #ff4500; /* Adjust color as needed */
+    font-weight: bold;
+}
+  
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
   
   
 a,a:hover,a:active,a:focus {
@@ -136,8 +222,8 @@ html,body{height: 100%;}
     margin-left: -42px;
     background: #4e4ffa;
 }
-.section-header p{color: #444a57;text-transform: capitalize;margin-bottom:10px;}
-.section-header h2 span,.section-header p span{text-transform: lowercase;}
+.section-header p{color: #444a57;text-transform: capitalize;margin-bottom:10px;line-height: 3;}
+/* .section-header h2 span,.section-header p span{text-transform: lowercase;} */
 
 /* section-header */
 
@@ -243,11 +329,13 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
 /*.welcome-hero-txt*/
 .welcome-hero-txt{text-align: center;padding:290px 0 372px;}
 .welcome-hero-txt h2 {
-    font-size: 42px;
-    color: #4e4ffa;
+    font-size: 52px;
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 45px;
+    font-family: 'Rufina', sans-serif;
+
 }
 .welcome-hero-txt p {
     font-size: 18px;
@@ -329,7 +417,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #4e4ffa;}
     line-height: 60px;
     width: 50px;
     text-align: center;
-    font-family: "Flaticon";
+    font-family: "Rufina";
     pointer-events: none;
     border: transparent;
 }/*model-select-icon*/
